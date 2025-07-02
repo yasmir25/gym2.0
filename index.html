@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Fit</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="fit.jpg" alt="Logo Gimnasio" class="logo" />
+      <h1 id="main-title">Fit Gym</h1>
+    </header>
+
+    <!-- Área de login/registro -->
+    <div class="form-container" id="auth-container">
+      <div class="form-toggle">
+        <button id="show-login" class="active">Iniciar Sesión</button>
+        <button id="show-register">Regístrate</button>
+      </div>
+      <form id="login-form">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+      </form>
+      <form id="register-form" class="hidden">
+        <input type="text" placeholder="Nombre completo" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Contraseña" required />
+        <button type="submit">Regístrate</button>
+      </form>
+    </div>
+
+    <!-- Panel de inicio con opciones GEN -->
+    <div class="dashboard hidden" id="dashboard">
+      <h2>Bienvenido </h2>
+      <ul class="options-list">
+        <li>📝 Generar rutina</li>
+        <li>📊 Seguimiento de progreso</li>
+        <li>📅 Ver calendario</li>
+        <li>🎥 Clases en video</li>
+        <li>⚙️ Ajustes</li>
+      </ul>
+      <button id="logout">Cerrar Sesión</button>
+    </div>
+  </div>
+</body>
+</html>
