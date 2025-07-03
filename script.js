@@ -45,7 +45,7 @@ function iniciarSesion(usuario) {
 function mostrarDashboard(usuario) {
   authContainer.classList.add('hidden');
   dashboard.classList.remove('hidden');
-  mainTitle.textContent = 'Inicio – Gimnasio 2025';
+  mainTitle.textContent = 'Inicio';
   userNameDisplay.textContent = usuario;
 }
 
@@ -54,7 +54,7 @@ logoutBtn.onclick = () => {
   sessionStorage.removeItem('gimUser');
   dashboard.classList.add('hidden');
   authContainer.classList.remove('hidden');
-  mainTitle.textContent = 'Gimnasio 2025';
+  mainTitle.textContent = 'Gimnasio';
   loginForm.reset();
   registerForm.reset();
 };
